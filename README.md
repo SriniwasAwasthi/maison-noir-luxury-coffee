@@ -74,29 +74,71 @@ Whether selecting a rare Panama Geisha vacuum siphon brew, calculating customize
 
 <div align="center">
 
-### 👑 The Grand Hero & Atmospheric Ambient Video
-![Hero Section](public/images/hero.jpg)
-> **Atmospheric Hero**: Looping high-definition barista video backdrop with gold typography, live roaster badge, and rotating gramophone soundscape toggle.
-
----
-
-### ☕ Artisanal Menu & Sensory Radar Dials
-![Menu Showcase](public/images/menu-latte.jpg)
-> **Sensory Cupping Radar**: Interactive modal displaying origin altitude, harvest lot, and quantitative meters for Acidity, Body, Sweetness, and Aroma.
-
----
-
-### 🎛️ Live 1928 Probat Roaster Telemetry
-![Roaster Heritage](public/images/story-beans.jpg)
-> **Roasting Room Telemetry**: Live sensor telemetry dials for Drum Temperature (`208.4°C`), Air Velocity (`84%`), and Rate-of-Rise (RoR) curve.
-
----
-
-### 🥐 Dawn Baked Patisserie & Slow Bar Rituals
-![Patisserie & Rituals](public/images/menu-pastry.jpg)
-> **Chef's Signatures**: Hand-laminated Valrhona croissants, pistachio rose tarts, and tableside siphon infusions.
+### 1. 👑 The Grand Entrance & Live Vinyl Soundscape (Homepage)
+![Homepage & Hero Showcase](docs/screenshots/01-homepage-hero.png)
 
 </div>
+
+> **What this section represents:**
+> - **Atmospheric Immersion:** Welcomes guests into Maison Noir with a cinematic warm-lit barista video backdrop, gold-foil luxury branding, and real-time operational status (*"Open Today · 07:00 — 23:00"*).
+> - **Autonomous Web Audio Vinyl Synthesis:** The top navigation houses the signature interactive **Continuous Gramophone** HUD with a rotating brass disc and tonearm, playing soothing algorithmic vinyl jazz on entry without audio glitches.
+> - **Top Bar & Multi-Currency Switcher:** Provides immediate access to table reservations, the interactive Sommelier pairing engine, tasting cart tray, and multi-currency conversion (**₹ INR**, **$ USD**, **€ EUR**, **£ GBP**, **¥ JPY**, **د.إ AED**).
+
+---
+
+<div align="center">
+
+### 2. 📜 Heritage, Roasting Philosophy & Live Telemetry (The Story)
+![Heritage & Roaster Telemetry](docs/screenshots/02-story-heritage.png)
+
+</div>
+
+> **What this section represents:**
+> - **Centuries of Roasting Craft:** Tells the story of Maison Noir’s 1928 cast-iron Probat UG-22 roaster and single-origin direct-trade farm partnerships across Yirgacheffe, Huila, and Boquete.
+> - **Live Roasting Telemetry Instrumentation:** An interactive telemetry panel rendering real-time sensor dials for **Drum Temperature** (`208.4°C`), **Exhaust Air Velocity** (`84%`), and **Rate-of-Rise (RoR)** roast development curves.
+> - **Sensory Origin Badges:** Visual cards detailing bean altitude (*1,950m – 2,200m*), processing methods (Natural anaerobic, Washed Geisha), and harvest lot tracking.
+
+---
+
+<div align="center">
+
+### 3. ☕ Curated 23-Item Gastronomic Catalogue (The Menu)
+![Artisanal Menu Showcase](docs/screenshots/03-menu-catalogue.png)
+
+</div>
+
+> **What this section represents:**
+> - **100% Unique Offerings:** Every single item across *Espresso Extractions*, *Signature Brews*, *Cold & Iced Creations*, and *Dawn Patisserie* is showcased with its own dedicated high-resolution photography.
+> - **Sensory Flavor Matrix & Cupping Modals:** Guests can click any offering to open a luxury Cupping Radar displaying quantitative meters for *Roast Depth*, *Acidity Brightness*, *Body Texture*, *Sweetness*, and *Aroma Complexity*.
+> - **Customization & Direct Ordering:** Connoisseurs can customize temperature, dairy alternatives (*Oat, Almond, Organic Whole*), gold leaf garnishes, and add items directly to the tableside tasting tray.
+
+---
+
+<div align="center">
+
+### 4. 🏛️ Immersive Salon & Slow Bar Visual Experience (The Gallery)
+![Luxury Gallery Showcase](docs/screenshots/05-gallery-ambiance.png)
+
+</div>
+
+> **What this section represents:**
+> - **Architectural Elegance:** Highlights the Parisian architectural salon, marble countertops, bespoke siphon brew bars, and ambient midnight candlelit seating.
+> - **Interactive Category Filtering:** Guests can seamlessly filter photography across *The Salon*, *Barista Craft*, *Slow Bar Rituals*, and *Dawn Patisserie*.
+> - **Full-Resolution Lightbox:** Clicking any photo opens a fullscreen high-contrast cinematic lightbox with keyboard-navigable exhibition slides.
+
+---
+
+<div align="center">
+
+### 5. 📍 Location, Concierge Booking & Private Reservations (The Visit)
+![Visit & Concierge Booking](docs/screenshots/06-visit-concierge.png)
+
+</div>
+
+> **What this section represents:**
+> - **Bespoke Tableside Ritual Reservations:** Guests can reserve private tables across 4 curated salon zones (*The Velvet Salon, The Slow Bar, The Vinyl Cellar, The Courtyard Garden*), with date/time pickers and sensory pairing masterclass add-ons.
+> - **Calendar Sync & Pass Generation:** Generates unique digital booking passes (`#MN-RSV-xxxxx`) and one-click `.ics` calendar invitation downloads.
+> - **Atelier Location & Hours:** Full location coordinates (*742 Evergreen Promenade, Mayfair*), valet concierge directions, contact channels, and VIP Inner Circle newsletter subscription.
 
 ---
 
