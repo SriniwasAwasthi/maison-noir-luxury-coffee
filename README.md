@@ -155,8 +155,22 @@ Whether selecting a rare Panama Geisha vacuum siphon brew, calculating customize
 
 <div align="center">
 
-### 7. ⭐ Verified Guest Book Reviews ("Loved, Loudly")
-![Guest Book Reviews Showcase](docs/screenshots/07-guestbook-reviews.png)
+### 7. 🏛️ Immersive Salon & Slow Bar Visual Experience (The Gallery)
+![Luxury Gallery Showcase](docs/screenshots/07-gallery-ambiance.png)
+
+</div>
+
+> **What this section represents:**
+> - **Architectural Elegance:** Highlights the Parisian architectural salon, marble countertops, bespoke siphon brew bars, and ambient midnight candlelit seating.
+> - **Interactive Category Filtering:** Guests can seamlessly filter photography across *The Salon*, *Barista Craft*, *Slow Bar Rituals*, and *Dawn Patisserie*.
+> - **Full-Resolution Lightbox:** Clicking any photo opens a fullscreen high-contrast cinematic lightbox with keyboard-navigable exhibition slides.
+
+---
+
+<div align="center">
+
+### 8. ⭐ Verified Guest Book Reviews ("Loved, Loudly")
+![Guest Book Reviews Showcase](docs/screenshots/08-guestbook-reviews.png)
 
 </div>
 
@@ -168,8 +182,8 @@ Whether selecting a rare Panama Geisha vacuum siphon brew, calculating customize
 
 <div align="center">
 
-### 8. 📍 Location, Concierge & Old Roastery District (The Visit)
-![Visit & Concierge Booking](docs/screenshots/08-visit-concierge.png)
+### 9. 📍 Location, Concierge & Old Roastery District (The Visit)
+![Visit & Concierge Booking](docs/screenshots/09-visit-concierge.png)
 
 </div>
 
@@ -183,35 +197,34 @@ Whether selecting a rare Panama Geisha vacuum siphon brew, calculating customize
 
 ```mermaid
 flowchart TD
-    subgraph Client_Layer ["Client Experience Layer (React 19 & Vite 7)"]
-        A["👤 Guest / Coffee Connoisseur"] --> B["💻 Maison Noir SPA Root (App.tsx)"]
-        B --> C["💱 ShopProvider Context (ShopContext.tsx)"]
-        C --> D["🧭 Navbar & Currency Engine (INR / USD / EUR / GBP / AED)"]
+    subgraph Client_Layer ["Client Experience Layer (React 19, TypeScript & Vite 7)"]
+        A["👤 Guest / Coffee Connoisseur"] --> B["💻 Maison Noir Single-Page App (App.tsx)"]
+        B --> C["💱 ShopProvider Global Context (ShopContext.tsx)"]
+        C --> D["🧭 Luxury Navbar & Currency Engine (INR / USD / EUR / GBP / AED)"]
         C --> E["🎵 Silent & Fluent Web Audio Engine (audio.ts)"]
         C --> F["🛍️ Tasting Tray Cart Drawer (CartDrawer.tsx)"]
-        C --> G["☕ Sensory Cupping Modal (ItemDetailModal.tsx)"]
-        C --> H["✨ Coffee Sommelier Engine (CoffeeSommelierModal.tsx)"]
+        C --> G["☕ Sensory Cupping Radar Modal (ItemDetailModal.tsx)"]
+        C --> H["✨ Coffee Sommelier Matching Engine (CoffeeSommelierModal.tsx)"]
     end
 
     subgraph Soundscape_Engine ["Zero-Echo Procedural Audio Core (Web Audio API)"]
         E --> M_Vinyl["🎶 Mode 1: Vintage Vinyl Jazz (Harmonic 8-Chord Cycle)"]
         E --> M_Slow["☕ Mode 2: Roastery Slow Bar (Resonance & Steam Notes)"]
         E --> M_Rain["🌧️ Mode 3: Rain on Stained Glass (Mellow Ambient Piano)"]
+        E --> Bar["🎛️ Floating Audio Control Bar & Rotating Turntable (AudioBar.tsx & Gramophone.tsx)"]
     end
 
     subgraph Atmospheric_Sections ["Atmospheric Page Sections"]
-        B --> S1["👑 Hero Section & Gramophone Widget (Hero.tsx)"]
-        B --> S2["📜 Heritage & 1928 Probat Roaster Telemetry (RoasterTelemetry.tsx)"]
+        B --> S1["👑 Hero Section & Operational Banner (Hero.tsx)"]
+        B --> S2A["📜 Heritage & Roasting Philosophy (Story.tsx)"]
+        B --> S2B["🎛️ 1928 Probat Live Telemetry, Atlas & RoR Curve (RoasterTelemetry.tsx)"]
         B --> S3["🍽️ Curated 22-Item Gastronomic Menu (Menu.tsx)"]
-        B --> S4["✨ 4-Act Sensory Experience (Experience.tsx)"]
+        B --> S4["✨ 4-Act Ceremonial Sensory Experience (Experience.tsx)"]
         B --> S5["🖼️ Filterable Photo Gallery & Lightbox (Gallery.tsx)"]
-        B --> S6["🛋️ VIP Table Reservation & jsPDF Engine (Reservation.tsx)"]
-        B --> S7["⭐ Verified Guest Book Reviews (Reviews.tsx)"]
+        B --> S6["🛋️ VIP Atelier Table Reservation Engine (Reservation.tsx)"]
+        S6 --> PDF["📄 VIP Gold-Bordered Atelier Invitation Pass (invitationPdf.ts via jsPDF)"]
+        B --> S7["⭐ Verified Guest Book Reviews & Filters (Reviews.tsx)"]
         B --> S8["📍 Location, Hours & Concierge (Visit.tsx)"]
-    end
-
-    subgraph PDF_Subsystem ["Luxury Document Generation (jsPDF)"]
-        S6 --> PDF["📄 VIP Gold-Bordered Atelier Invitation Pass (invitationPdf.ts)"]
     end
 
     subgraph Backend_Middleware ["API & Serverless Gateway (/api/*)"]
@@ -221,13 +234,14 @@ flowchart TD
         M4["/api/newsletter"] --> D4["📬 Inner Circle Subscriber Store"]
     end
 
-    subgraph Broadcast_Media ["Broadcast Media & AI Voice Agent"]
-        V1["🎬 Maison_Noir_Walkthrough_With_VoiceAgent.mp4"]
-        V2["🎙️ Maison_Noir_Voice_Agent_Narration.mp3"]
-        V3["🎵 Maison_Noir_Vintage_Vinyl_Jazz.mp3"]
+    subgraph Broadcast_Media ["Broadcast Media & AI Voice Agent Suite"]
+        V1["🎬 Maison_Noir_Walkthrough_With_VoiceAgent.mp4 (Full 1080p Walkthrough)"]
+        V2["🎙️ Maison_Noir_Voice_Agent_Narration.mp3 (320 kbps Voiceover)"]
+        V3["🎵 Maison_Noir_Vintage_Vinyl_Jazz.mp3 (320 kbps Soundscape)"]
     end
 
     S3 -->|"Direct Add to Tray & Fetch Menu"| M1
+    H -->|"Evaluate Match with Menu"| M1
     S6 -->|"Submit Booking"| M2
     S7 -->|"Filter & Post Reviews"| M3
     S8 -->|"Subscribe"| M4
