@@ -9,7 +9,7 @@ export default function AudioBar() {
   const [expanded, setExpanded] = useState(false);
 
   const modes: { id: 'vinyl' | 'espresso' | 'rain'; label: string; icon: React.ElementType; desc: string }[] = [
-    { id: 'vinyl', label: 'Vintage Vinyl Jazz', icon: Disc3, desc: 'Continuous 1960s vinyl crackle & warm jazz chords' },
+    { id: 'vinyl', label: 'Vintage Vinyl Jazz', icon: Disc3, desc: 'Whisper-soft acoustic jazz harmony & pure warmth' },
     { id: 'espresso', label: 'Roastery Slow Bar', icon: Coffee, desc: 'Gentle espresso bar resonance & steam notes' },
     { id: 'rain', label: 'Rain on Stained Glass', icon: CloudRain, desc: 'Soothing rain & mellow ambient piano' },
   ];

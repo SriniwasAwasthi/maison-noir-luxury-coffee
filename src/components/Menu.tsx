@@ -310,9 +310,21 @@ export default function Menu() {
 
                         <button
                           onClick={(e) => handleQuickAdd(e, item)}
-                          className="opacity-90 sm:opacity-0 group-hover:opacity-100 text-[#e8c98a] hover:text-[#faf5ea] transition text-[11px] tracking-wider uppercase flex items-center gap-1 border border-[#c9a25e]/30 px-2 py-0.5 bg-[#0d0a07]"
+                          className={`opacity-90 sm:opacity-0 group-hover:opacity-100 transition text-[11px] tracking-wider uppercase flex items-center gap-1 border px-2.5 py-1 ${
+                            addedItemNotice === item.id
+                              ? 'bg-[#c9a25e] text-[#0d0a07] border-[#c9a25e] font-medium'
+                              : 'text-[#e8c98a] hover:text-[#faf5ea] border-[#c9a25e]/30 bg-[#0d0a07]'
+                          }`}
                         >
-                          <Plus size={11} /> Add to Tray
+                          {addedItemNotice === item.id ? (
+                            <>
+                              <Check size={12} /> Added to Tray
+                            </>
+                          ) : (
+                            <>
+                              <Plus size={11} /> Add to Tray
+                            </>
+                          )}
                         </button>
                       </div>
                     </div>

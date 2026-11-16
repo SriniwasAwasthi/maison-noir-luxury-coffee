@@ -81,8 +81,8 @@ Whether selecting a rare Panama Geisha vacuum siphon brew, calculating customize
 
 > **What this section represents:**
 > - **Atmospheric Immersion:** Welcomes guests into Maison Noir with a cinematic warm-lit barista video backdrop, gold-foil luxury branding, and real-time operational status (*"Open Today · 07:00 — 23:00"*).
-> - **Autonomous Web Audio Vinyl Synthesis:** The top navigation houses the signature interactive **Continuous Gramophone** HUD with a rotating brass disc and tonearm, playing soothing algorithmic vinyl jazz on entry without audio glitches.
-> - **Top Bar & Multi-Currency Switcher:** Provides immediate access to table reservations, the interactive Sommelier pairing engine, tasting cart tray, and multi-currency conversion (**₹ INR**, **$ USD**, **€ EUR**, **£ GBP**, **¥ JPY**, **د.إ AED**).
+> - **Silent & Fluent Web Audio Synthesis:** The Gramophone Soundscape widget synthesizes authentic 1960s vinyl jazz and ambient rain directly inside the browser using zero-dependency Web Audio API with zero echo.
+> - **Top Bar & Multi-Currency Switcher:** Immediate access to VIP reservations, Sommelier pairing engine, shopping bag counter, and real-time currency conversion (**₹ INR**, **$ USD**, **€ EUR**, **£ GBP**, **د.إ AED**).
 
 ---
 
@@ -95,50 +95,87 @@ Whether selecting a rare Panama Geisha vacuum siphon brew, calculating customize
 
 > **What this section represents:**
 > - **Centuries of Roasting Craft:** Tells the story of Maison Noir’s 1928 cast-iron Probat UG-22 roaster and single-origin direct-trade farm partnerships across Yirgacheffe, Huila, and Boquete.
-> - **Live Roasting Telemetry Instrumentation:** An interactive telemetry panel rendering real-time sensor dials for **Drum Temperature** (`208.4°C`), **Exhaust Air Velocity** (`84%`), and **Rate-of-Rise (RoR)** roast development curves.
-> - **Sensory Origin Badges:** Visual cards detailing bean altitude (*1,950m – 2,200m*), processing methods (Natural anaerobic, Washed Geisha), and harvest lot tracking.
+> - **Live Roasting Telemetry Instrumentation:** An interactive telemetry panel featuring 3 live tabs: **Roast Dials** (Drum Temperature `208.4°C`, Air Velocity `84%`, Dawn Freshness Clock), **Bean Atlas** (single-origin micro-lots), and **Roast Curve** (real-time thermal Rate-of-Rise SVG curve).
 
 ---
 
 <div align="center">
 
-### 3. ☕ Curated 23-Item Gastronomic Catalogue (The Menu)
+### 3. ☕ Curated 22-Item Gastronomic Catalogue (The Menu)
 ![Artisanal Menu Showcase](docs/screenshots/03-menu-catalogue.png)
 
 </div>
 
 > **What this section represents:**
-> - **100% Unique Offerings:** Every single item across *Espresso Extractions*, *Signature Brews*, *Cold & Iced Creations*, and *Dawn Patisserie* is showcased with its own dedicated high-resolution photography.
-> - **Sensory Flavor Matrix & Cupping Modals:** Guests can click any offering to open a luxury Cupping Radar displaying quantitative meters for *Roast Depth*, *Acidity Brightness*, *Body Texture*, *Sweetness*, and *Aroma Complexity*.
-> - **Customization & Direct Ordering:** Connoisseurs can customize temperature, dairy alternatives (*Oat, Almond, Organic Whole*), gold leaf garnishes, and add items directly to the tableside tasting tray.
+> - **Michelin-Grade Offerings:** Showcases *Espresso Extractions*, *Signature Brews*, *Cold & Iced Creations*, and *Dawn Patisserie* with dedicated high-resolution culinary photography.
+> - **Tactile Direct Add-to-Tray:** Clicking **`+ ADD TO TRAY`** adds items seamlessly to the cart with instant gold checkmark feedback without interrupting the browsing experience.
+> - **Sensory Flavor Matrix & Cupping Modals:** Quantitative meters for *Roast Depth*, *Acidity Brightness*, *Body Texture*, *Sweetness*, and *Aroma Complexity*.
 
 ---
 
 <div align="center">
 
-### 4. 🏛️ Immersive Salon & Slow Bar Visual Experience (The Gallery)
-![Luxury Gallery Showcase](docs/screenshots/05-gallery-ambiance.png)
+### 4. 🛍️ Slide-Over Tasting Tray Order Management & Service Selection
+![Tasting Tray Showcase](docs/screenshots/04-tasting-tray.png)
 
 </div>
 
 > **What this section represents:**
-> - **Architectural Elegance:** Highlights the Parisian architectural salon, marble countertops, bespoke siphon brew bars, and ambient midnight candlelit seating.
-> - **Interactive Category Filtering:** Guests can seamlessly filter photography across *The Salon*, *Barista Craft*, *Slow Bar Rituals*, and *Dawn Patisserie*.
-> - **Full-Resolution Lightbox:** Clicking any photo opens a fullscreen high-contrast cinematic lightbox with keyboard-navigable exhibition slides.
+> - **Discreet Slide-Over Drawer:** Accessed exclusively by clicking the top-right shopping bag icon.
+> - **Tableside Experience Selector:** Choose between **Dine-In Table Delivery** (*with table number input*) and **Roastery Pickup**.
+> - **Barista Ritual Gratuity:** Select gratuity tiers (15%, 18%, 20%, 25%), review transparent tax calculations, and confirm tasting orders with instant pass generation.
 
 ---
 
 <div align="center">
 
-### 5. 📍 Location, Concierge Booking & Private Reservations (The Visit)
-![Visit & Concierge Booking](docs/screenshots/06-visit-concierge.png)
+### 5. ✨ The Sensory Four-Act Evening Journey
+![Sensory Experience Showcase](docs/screenshots/05-sensory-experience.png)
 
 </div>
 
 > **What this section represents:**
-> - **Bespoke Tableside Ritual Reservations:** Guests can reserve private tables across 4 curated salon zones (*The Velvet Salon, The Slow Bar, The Vinyl Cellar, The Courtyard Garden*), with date/time pickers and sensory pairing masterclass add-ons.
-> - **Calendar Sync & Pass Generation:** Generates unique digital booking passes (`#MN-RSV-xxxxx`) and one-click `.ics` calendar invitation downloads.
-> - **Atelier Location & Hours:** Full location coordinates (*742 Evergreen Promenade, Mayfair*), valet concierge directions, contact channels, and VIP Inner Circle newsletter subscription.
+> - **Four-Act Ceremonial Ritual:** Guides guests through *Act 01: The Origin Flight*, *Act 02: The Slow Bar Ritual (tableside siphon & cezve)*, *Act 03: The Golden Pairing (pastry masterclass)*, and *Act 04: The Vinyl Hour*.
+> - **One-Click Reservation CTAs:** Direct booking integration at ₹4,032 per guest.
+
+---
+
+<div align="center">
+
+### 6. 🛋️ VIP Atelier Table Reservation & Golden Invitation PDF Pass
+![VIP Reservation Pass Showcase](docs/screenshots/06-vip-reservation-pass.png)
+
+</div>
+
+> **What this section represents:**
+> - **Bespoke Table Service Engine:** Guests reserve private seating zones across *The Velvet Salon*, *The Slow Bar*, *The Cellar Lounge*, or *The Courtyard Garden*.
+> - **Downloadable Luxury PDF Invitation:** Generates and downloads an embossed, gold-bordered luxury A5 PDF certificate via `jspdf`, formatted with guest name, confirmation code, and Mayfair atelier details.
+
+---
+
+<div align="center">
+
+### 7. ⭐ Verified Guest Book Reviews ("Loved, Loudly")
+![Guest Book Reviews Showcase](docs/screenshots/07-guestbook-reviews.png)
+
+</div>
+
+> **What this section represents:**
+> - **Verified Culinary Acclaim:** 12 verified testimonials from Michelin-star chefs, connoisseurs, and frequent patrons.
+> - **Filter Pills:** Dynamic filtering across *All (12)*, *5 Stars (10)*, and *4 Stars (2)* with real-time average score display (4.8 / 5.0).
+
+---
+
+<div align="center">
+
+### 8. 📍 Location, Concierge & Old Roastery District (The Visit)
+![Visit & Concierge Booking](docs/screenshots/08-visit-concierge.png)
+
+</div>
+
+> **What this section represents:**
+> - **Atelier Coordinates:** 128 Ember Lane, Old Roastery District, Mayfair with interactive dark-mode cartography.
+> - **Private Cellar Inquiries:** Direct contact concierge for parties of 7+, operating hours, and VIP Inner Circle dispatch subscription.
 
 ---
 
@@ -149,34 +186,50 @@ flowchart TD
     subgraph Client_Layer ["Client Experience Layer (React 19 & Vite 7)"]
         A["👤 Guest / Coffee Connoisseur"] --> B["💻 Maison Noir SPA Root (App.tsx)"]
         B --> C["💱 ShopProvider Context (ShopContext.tsx)"]
-        C --> D["🧭 Navbar & Currency Engine (INR / USD / EUR)"]
-        C --> E["🎵 Web Audio Soundscape (Gramophone.tsx)"]
+        C --> D["🧭 Navbar & Currency Engine (INR / USD / EUR / GBP / AED)"]
+        C --> E["🎵 Silent & Fluent Web Audio Engine (audio.ts)"]
         C --> F["🛍️ Tasting Tray Cart Drawer (CartDrawer.tsx)"]
         C --> G["☕ Sensory Cupping Modal (ItemDetailModal.tsx)"]
         C --> H["✨ Coffee Sommelier Engine (CoffeeSommelierModal.tsx)"]
     end
 
-    subgraph Interactive_Sections ["Atmospheric Page Sections"]
-        B --> S1["👑 Hero Section (Video & Soundscape)"]
-        B --> S2["📜 Heritage & Roaster Telemetry (Story.tsx)"]
-        B --> S3["🍽️ Curated 23-Item Menu (Menu.tsx)"]
+    subgraph Soundscape_Engine ["Zero-Echo Procedural Audio Core (Web Audio API)"]
+        E --> M_Vinyl["🎶 Mode 1: Vintage Vinyl Jazz (Harmonic 8-Chord Cycle)"]
+        E --> M_Slow["☕ Mode 2: Roastery Slow Bar (Resonance & Steam Notes)"]
+        E --> M_Rain["🌧️ Mode 3: Rain on Stained Glass (Mellow Ambient Piano)"]
+    end
+
+    subgraph Atmospheric_Sections ["Atmospheric Page Sections"]
+        B --> S1["👑 Hero Section & Gramophone Widget (Hero.tsx)"]
+        B --> S2["📜 Heritage & 1928 Probat Roaster Telemetry (RoasterTelemetry.tsx)"]
+        B --> S3["🍽️ Curated 22-Item Gastronomic Menu (Menu.tsx)"]
         B --> S4["✨ 4-Act Sensory Experience (Experience.tsx)"]
-        B --> S5["🖼️ Filterable Photo Gallery (Gallery.tsx)"]
-        B --> S6["🛋️ Table Reservation Engine (Reservation.tsx)"]
-        B --> S7["⭐ Verified Guest Book (Reviews.tsx)"]
-        B --> S8["📍 Location & Newsletter (Visit.tsx)"]
+        B --> S5["🖼️ Filterable Photo Gallery & Lightbox (Gallery.tsx)"]
+        B --> S6["🛋️ VIP Table Reservation & jsPDF Engine (Reservation.tsx)"]
+        B --> S7["⭐ Verified Guest Book Reviews (Reviews.tsx)"]
+        B --> S8["📍 Location, Hours & Concierge (Visit.tsx)"]
+    end
+
+    subgraph PDF_Subsystem ["Luxury Document Generation (jsPDF)"]
+        S6 --> PDF["📄 VIP Gold-Bordered Atelier Invitation Pass (invitationPdf.ts)"]
     end
 
     subgraph Backend_Middleware ["API & Serverless Gateway (/api/*)"]
-        M1["/api/menu-items"] --> D1["📦 Mock Data / Supabase Client"]
-        M2["/api/reservations"] --> D2["📅 Table Booking Store"]
-        M3["/api/reviews"] --> D3["⭐ Guest Book Reviews Store"]
+        M1["/api/menu-items"] --> D1["📦 22-Item Mock Data / Supabase Client"]
+        M2["/api/reservations"] --> D2["📅 Table Booking & Seating Store"]
+        M3["/api/reviews"] --> D3["⭐ 5-Star & 4-Star Guest Book Store"]
         M4["/api/newsletter"] --> D4["📬 Inner Circle Subscriber Store"]
     end
 
-    S3 -->|"Fetch Menu"| M1
-    S6 -->|"Submit Reservation"| M2
-    S7 -->|"Post & Get Reviews"| M3
+    subgraph Broadcast_Media ["Broadcast Media & AI Voice Agent"]
+        V1["🎬 Maison_Noir_Walkthrough_With_VoiceAgent.mp4"]
+        V2["🎙️ Maison_Noir_Voice_Agent_Narration.mp3"]
+        V3["🎵 Maison_Noir_Vintage_Vinyl_Jazz.mp3"]
+    end
+
+    S3 -->|"Direct Add to Tray & Fetch Menu"| M1
+    S6 -->|"Submit Booking"| M2
+    S7 -->|"Filter & Post Reviews"| M3
     S8 -->|"Subscribe"| M4
 ```
 

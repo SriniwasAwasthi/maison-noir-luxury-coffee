@@ -1,0 +1,44 @@
+[
+  {
+    "prompt": "Cinematic slow glide into Maison Noir, a high-end luxury dark aesthetic coffeehouse salon in Mayfair London. Deep obsidian marble countertops, amber crystal chandeliers, warm gold accents (#C9A25E), and vintage 1928 cast-iron coffee roaster glowing in soft warm backlight. 4k editorial lighting, slow fluid camera movement.",
+    "aspect_ratio": "16:9",
+    "duration": 10,
+    "resolution": "1080p",
+    "output": "media/chapter_01_brand_genesis.mp4"
+  },
+  {
+    "prompt": "Macro visual focus on haute luxury branding details: an antique brass rotating gramophone playing smoothly, gold foil typography on dark textured matte black menu cards, warm candlelight reflecting on black marble, ultra-clean aesthetic design language with elegant slow camera pan.",
+    "aspect_ratio": "16:9",
+    "duration": 10,
+    "resolution": "1080p",
+    "output": "media/chapter_02_design_philosophy.mp4"
+  },
+  {
+    "prompt": "High-tech luxury engineering visualization: holographic subtle gold telemetry lines displaying real-time sensor dials, drum roaster temperature curves at 208.4 degrees Celsius, rate-of-rise graph, smooth digital instrumentation overlaying a dark artisanal roastery setting.",
+    "aspect_ratio": "16:9",
+    "duration": 10,
+    "resolution": "1080p",
+    "output": "media/chapter_03_telemetry_architecture.mp4"
+  },
+  {
+    "prompt": "Artisanal barista performing a precise vacuum siphon brew and single-origin pour over Panama Geisha coffee in a crystal glass carafe. Rich golden crema, delicate rising steam, 24k gold leaf edible flakes shimmering on fine porcelain espresso cup. Ultra-high definition luxury dining.",
+    "aspect_ratio": "16:9",
+    "duration": 10,
+    "resolution": "1080p",
+    "output": "media/chapter_04_sensory_menu_demo.mp4"
+  },
+  {
+    "prompt": "An elegant guest seated in the velvet salon of Maison Noir, interacting with a modern smartphone displaying the luxury coffee tasting tray order and tableside reservation pass. Warm atmospheric glow, slow cinematic focus pull from the smartphone screen to the Mayfair salon interior.",
+    "aspect_ratio": "16:9",
+    "duration": 10,
+    "resolution": "1080p",
+    "output": "media/chapter_05_tableside_journey.mp4"
+  },
+  {
+    "prompt": "Final cinematic wide shot of Maison Noir salon at twilight in Mayfair London. Exterior and interior architectural splendor, warm gold lights glowing through arched French windows, camera smoothly pulling back into the evening mist with gold emblem shining gracefully.",
+    "aspect_ratio": "16:9",
+    "duration": 10,
+    "resolution": "1080p",
+    "output": "media/chapter_06_executive_outro.mp4"
+  }
+]

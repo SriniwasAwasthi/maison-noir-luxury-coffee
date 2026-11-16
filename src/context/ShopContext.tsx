@@ -56,7 +56,7 @@ interface ShopContextType {
   setCurrency: (c: Currency) => void;
   formatPrice: (usd: number) => string;
   cart: CartItem[];
-  addToCart: (item: MenuItem, options?: Partial<CartItem>) => void;
+  addToCart: (item: MenuItem, options?: Partial<CartItem>, openDrawer?: boolean) => void;
   removeFromCart: (cartId: string) => void;
   updateQuantity: (cartId: string, quantity: number) => void;
   clearCart: () => void;
@@ -161,7 +161,7 @@ export const ShopProvider: React.FC<{ children: React.ReactNode }> = ({ children
     return config.prefix ? `${config.symbol}${formattedNum}` : `${formattedNum} ${config.symbol}`;
   };
 
-  const addToCart = (item: MenuItem, options?: Partial<CartItem>) => {
+  const addToCart = (item: MenuItem, options?: Partial<CartItem>, openDrawer: boolean = false) => {
     const temp = options?.temperature || (item.category === 'Cold & Iced' ? 'Iced' : 'Hot');
     const milk = options?.milkOption || 'Organic Whole Milk';
     const grind = options?.grindOption || 'Standard Pour';
@@ -203,7 +203,9 @@ export const ShopProvider: React.FC<{ children: React.ReactNode }> = ({ children
       ];
     });
 
-    setIsCartOpen(true);
+    if (openDrawer) {
+      setIsCartOpen(true);
+    }
   };
 
   const removeFromCart = (cartId: string) => {

@@ -25,3 +25,13 @@ dist-ssr
 *.sw?
 .vite-source-tags.js
 .vercel
+
+# Heavy raw media files exceeding Git standard thresholds
+*.mp4
+!public/videos/hero.mp4
+*.wav
+voice_segments/
+build_voiceover_walkthrough.py
+render_fluent_jazz.py
+render_vintage_vinyl_jazz.py
+

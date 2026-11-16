@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { CalendarCheck, Loader2, CheckCircle2, Users, Clock, Sparkles, Copy, Check, Download, Armchair } from 'lucide-react';
+import { CalendarCheck, Loader2, CheckCircle2, Users, Clock, Sparkles, Copy, Check, Download, Armchair, FileText, Award } from 'lucide-react';
 import { useShop } from '../context/ShopContext';
+import { generateLuxuryReservationPdf } from '../utils/invitationPdf';
 
 const timeSlots = ['08:00', '09:30', '11:00', '12:30', '14:00', '15:30', '17:00', '18:30', '20:00', '21:30'];
 
@@ -104,7 +105,7 @@ PRODID:-//Maison Noir//Coffee Reservation//EN
 BEGIN:VEVENT
 SUMMARY:Maison Noir Tasting Reservation
 DESCRIPTION:Table reservation for ${confirmation.guests} guests in the ${confirmation.zone || selectedZone}.
-LOCATION:128 Ember Lane, Old Roastery District
+LOCATION:742 Evergreen Promenade, Mayfair, London W1K 7TP
 DTSTART:${confirmation.reservation_date.replace(/-/g, '')}T${confirmation.reservation_time.replace(':', '')}00
 DURATION:PT2H
 STATUS:CONFIRMED
@@ -118,6 +119,24 @@ END:VCALENDAR`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
+
+  const handleDownloadPdf = () => {
+    if (!confirmation) return;
+    generateLuxuryReservationPdf({
+      id: confirmation.id,
+      name: confirmation.name || form.name,
+      email: form.email,
+      phone: form.phone,
+      guests: confirmation.guests || form.guests,
+      reservation_date: confirmation.reservation_date || form.reservation_date,
+      reservation_time: confirmation.reservation_time || form.reservation_time,
+      occasion: form.occasion,
+      zone: confirmation.zone || selectedZone,
+      siphonRitual: confirmation.siphonRitual || addSiphonRitual,
+      pastryPairing: addPastryPairing,
+      notes: form.notes,
+    });
   };
 
   const inputCls = 'w-full bg-[#0d0a07] border border-[#c9a25e]/25 px-4 py-3 text-xs text-[#f3ead9] outline-none focus:border-[#c9a25e] transition placeholder:text-[#f3ead9]/30';
@@ -184,41 +203,92 @@ END:VCALENDAR`;
                 Confirmation <span className="text-[#e8c98a] font-mono">#MN-{String(confirmation.id).padStart(5, '0')}</span> — a formal confirmation has been registered.
               </p>
 
-              {/* Ticket Card */}
-              <div className="mt-6 border border-[#c9a25e]/35 bg-[#0d0a07] p-6 text-left space-y-2">
-                <div className="flex justify-between text-[10px] tracking-widest uppercase text-[#c9a25e]">
-                  <span>RESERVATION PASS</span>
-                  <span>{confirmation.zone || selectedZone}</span>
+              {/* Luxury VIP Invitation Card Preview */}
+              <div className="mt-6 relative border-2 border-[#c9a25e] bg-gradient-to-b from-[#18130e] via-[#0d0a07] to-[#120e0a] p-6 text-left shadow-[0_15px_40px_rgba(0,0,0,0.8)] overflow-hidden">
+                <div className="absolute top-0 right-0 w-28 h-28 bg-[#c9a25e]/5 rounded-full blur-2xl pointer-events-none" />
+                <div className="absolute -bottom-8 -left-8 w-28 h-28 bg-[#c9a25e]/5 rounded-full blur-2xl pointer-events-none" />
+                
+                {/* Card Header */}
+                <div className="flex items-center justify-between border-b border-[#c9a25e]/30 pb-3">
+                  <div>
+                    <span className="text-[9px] tracking-[0.35em] uppercase text-[#c9a25e] font-medium block">
+                      Maison Noir Mayfair • Official Pass
+                    </span>
+                    <h4 className="font-serif text-lg text-[#faf5ea]">VIP Atelier Table Invitation</h4>
+                  </div>
+                  <span className="font-mono text-xs text-[#e8c98a] border border-[#c9a25e]/50 px-2.5 py-1 bg-[#c9a25e]/10">
+                    #MN-{String(confirmation.id).padStart(5, '0')}
+                  </span>
                 </div>
-                <p className="font-serif text-2xl text-[#faf5ea]">
-                  {confirmation.guests} Guest{confirmation.guests > 1 ? 's' : ''} • {confirmation.reservation_date}
-                </p>
-                <p className="font-serif text-2xl gold-text">
-                  {confirmation.reservation_time}
-                </p>
-                {confirmation.siphonRitual && (
-                  <p className="text-xs text-[#e8c98a] flex items-center gap-1.5 pt-2 border-t border-[#c9a25e]/20">
-                    <Sparkles size={13} /> Tableside Siphon Masterclass Included
-                  </p>
+
+                {/* Card Details Grid */}
+                <div className="mt-4 grid grid-cols-2 gap-4 text-xs">
+                  <div>
+                    <p className="text-[10px] tracking-widest uppercase text-[#c9a25e]/70">Honored Guest</p>
+                    <p className="font-serif text-base text-[#faf5ea] mt-0.5">{confirmation.name || form.name}</p>
+                  </div>
+                  <div>
+                    <p className="text-[10px] tracking-widest uppercase text-[#c9a25e]/70">Reserved Atmosphere</p>
+                    <p className="font-serif text-base gold-text mt-0.5">{confirmation.zone || selectedZone}</p>
+                  </div>
+                  <div>
+                    <p className="text-[10px] tracking-widest uppercase text-[#c9a25e]/70">Date & Arrival Time</p>
+                    <p className="text-[#f3ead9] font-medium mt-0.5">{confirmation.reservation_date} at {confirmation.reservation_time}</p>
+                  </div>
+                  <div>
+                    <p className="text-[10px] tracking-widest uppercase text-[#c9a25e]/70">Party Size & Occasion</p>
+                    <p className="text-[#f3ead9] font-medium mt-0.5">{confirmation.guests} Guests • {form.occasion || 'Private Tasting'}</p>
+                  </div>
+                </div>
+
+                {/* Enhancements / Rituals Badge */}
+                {(confirmation.siphonRitual || addPastryPairing) && (
+                  <div className="mt-4 pt-3 border-t border-[#c9a25e]/20 flex flex-wrap gap-2 text-[11px] text-[#e8c98a]">
+                    {confirmation.siphonRitual && (
+                      <span className="inline-flex items-center gap-1 bg-[#c9a25e]/15 border border-[#c9a25e]/30 px-2 py-0.5">
+                        <Sparkles size={11} /> Siphon Masterclass Included
+                      </span>
+                    )}
+                    {addPastryPairing && (
+                      <span className="inline-flex items-center gap-1 bg-[#c9a25e]/15 border border-[#c9a25e]/30 px-2 py-0.5">
+                        <Award size={11} /> Chef Pastry Flight Included
+                      </span>
+                    )}
+                  </div>
                 )}
+
+                <div className="mt-4 pt-3 border-t border-[#c9a25e]/15 flex items-center justify-between text-[10px] text-[#f3ead9]/50">
+                  <span>742 Evergreen Promenade, Mayfair, London</span>
+                  <span>Smart Elegant Attire Requested</span>
+                </div>
               </div>
 
               {/* Action Buttons */}
               <div className="mt-6 flex flex-col sm:flex-row gap-3">
                 <button
+                  onClick={handleDownloadPdf}
+                  className="flex-1 py-3.5 bg-[#c9a25e] text-[#0d0a07] font-semibold text-xs uppercase tracking-widest hover:bg-[#e8c98a] transition flex items-center justify-center gap-2 shadow-[0_8px_25px_rgba(201,162,94,0.35)]"
+                >
+                  <FileText size={16} />
+                  <span>Download Luxury Invitation Card (PDF)</span>
+                </button>
+
+                <button
                   onClick={copyBookingDetails}
-                  className="flex-1 py-3 border border-[#c9a25e]/40 text-[#e8c98a] text-xs uppercase tracking-wider hover:bg-[#c9a25e]/10 transition flex items-center justify-center gap-2"
+                  className="py-3 px-4 border border-[#c9a25e]/40 text-[#e8c98a] text-xs uppercase tracking-wider hover:bg-[#c9a25e]/10 transition flex items-center justify-center gap-1.5"
+                  title="Copy details to clipboard"
                 >
                   {copied ? <Check size={15} /> : <Copy size={15} />}
-                  {copied ? 'Copied to Clipboard' : 'Copy Booking Details'}
+                  <span>{copied ? 'Copied' : 'Copy'}</span>
                 </button>
 
                 <button
                   onClick={downloadCalendarFile}
-                  className="flex-1 py-3 border border-[#c9a25e]/40 text-[#e8c98a] text-xs uppercase tracking-wider hover:bg-[#c9a25e]/10 transition flex items-center justify-center gap-2"
+                  className="py-3 px-4 border border-[#c9a25e]/40 text-[#e8c98a] text-xs uppercase tracking-wider hover:bg-[#c9a25e]/10 transition flex items-center justify-center gap-1.5"
+                  title="Add to iCalendar"
                 >
                   <Download size={15} />
-                  <span>Add to Calendar (.ics)</span>
+                  <span>Calendar (.ics)</span>
                 </button>
               </div>
 

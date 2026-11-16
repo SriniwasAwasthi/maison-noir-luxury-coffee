@@ -18,7 +18,16 @@ export default async function handler(req, res) {
       return res.status(200).json(localReservations);
     }
     if (req.method === 'POST') {
-      const { name, email, phone, guests, reservation_date, reservation_time, occasion, notes } = req.body || {};
+      const b = req.body || {};
+      const name = b.name;
+      const email = b.email;
+      const phone = b.phone;
+      const guests = b.guests;
+      const reservation_date = b.reservation_date || b.date;
+      const reservation_time = b.reservation_time || b.time;
+      const occasion = b.occasion;
+      const notes = b.notes;
+
       if (!name || !email || !guests || !reservation_date || !reservation_time) {
         return res.status(400).json({ error: 'Name, email, guests, date and time are required' });
       }

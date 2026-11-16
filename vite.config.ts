@@ -113,6 +113,10 @@ export default defineConfig(async ({ mode }) => {
     server: {
       port: 5173,
       host: true,
+      cors: true,
+      watch: {
+        ignored: ['**/*.mp4', '**/*.wav', '**/*.mp3', '**/docs/**', '**/.git/**'],
+      },
     },
   };
 });

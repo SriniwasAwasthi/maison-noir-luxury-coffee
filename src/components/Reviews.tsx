@@ -127,7 +127,7 @@ export default function Reviews() {
                     : 'border-[#c9a25e]/20 text-[#f3ead9]/60 hover:border-[#c9a25e]/40'
                 }`}
               >
-                All
+                All ({reviews.length})
               </button>
               <button
                 onClick={() => { setRatingFilter(5); setIndex(0); }}
@@ -137,7 +137,17 @@ export default function Reviews() {
                     : 'border-[#c9a25e]/20 text-[#f3ead9]/60 hover:border-[#c9a25e]/40'
                 }`}
               >
-                5 Stars
+                5 Stars ({reviews.filter(r => r.rating === 5).length})
+              </button>
+              <button
+                onClick={() => { setRatingFilter(4); setIndex(0); }}
+                className={`px-3 py-1 border transition uppercase tracking-wider text-[10px] ${
+                  ratingFilter === 4
+                    ? 'bg-[#c9a25e] text-[#0d0a07] border-[#c9a25e] font-semibold'
+                    : 'border-[#c9a25e]/20 text-[#f3ead9]/60 hover:border-[#c9a25e]/40'
+                }`}
+              >
+                4 Stars ({reviews.filter(r => r.rating === 4).length})
               </button>
             </div>
           </div>
