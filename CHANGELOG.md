@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 - **7 Native-Resolution UI Showcase Captures**: Placed in `Images/` and mapped to `docs/screenshots/` for the complete visual walk-through.
+- **Broadcast Video Walkthrough Showcase**: Added optimized 1080p full walkthrough video (`docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4`) with dedicated README video section, technical production specs, and narrative chapter guide.
 - **VIP Invitation PDF Pass**: Integrated `jspdf` in `src/utils/invitationPdf.ts` to generate formal, gold-bordered A5 reservation certificates directly in the browser.
 - **Roastery Telemetry 3-Tab Suite**: Added interactive switching between *Roast Dials* (live Probat sensor telemetry), *Bean Atlas* (micro-lot details), and *Roast Curve* (Rate-of-Rise SVG chart).
 - **Verified Reviews System**: Added 12 verified culinary critiques with 5-star and 4-star filter pills and real-time average calculation.

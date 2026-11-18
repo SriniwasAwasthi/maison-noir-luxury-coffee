@@ -29,6 +29,7 @@ dist-ssr
 # Heavy raw media files exceeding Git standard thresholds
 *.mp4
 !public/videos/hero.mp4
+!docs/video/*.mp4
 *.wav
 voice_segments/
 build_voiceover_walkthrough.py

@@ -38,6 +38,7 @@
   - `README.md`, `LICENSE`, `.gitignore`, `.env.example`, `CHANGELOG.md`
   - `docs/ASSUMPTIONS.md`, `docs/PUSH_AUDIT.md`
   - `docs/screenshots/*` (9 section screenshots for UI tour)
+  - `docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4` (Optimized 17.6 MB web-ready 1080p walkthrough)
   - `Images/*` (7 original native-resolution screenshot captures)
   - `public/audio/*` (Optimized 320 kbps MP3 soundscapes)
   - `public/images/*` (Culinary gastronomy catalog photography)
