@@ -72,33 +72,40 @@ Whether selecting a rare Panama Geisha vacuum siphon brew, calculating customize
 
 ## 🎬 Cinematic Video Walkthrough & AI Voiceover Tour
 
-Experience the full Maison Noir luxury platform through our broadcast-grade 1080p Full HD video overview, featuring synchronized AI voice narration, smooth cinematic viewport panning, and authentic procedural vinyl jazz soundscapes:
+Experience the full Maison Noir luxury platform through our broadcast-grade 1080p Full HD master video overview (`Maison_Noir_Walkthrough_With_VoiceAgent.mp4`), featuring synchronized AI voice narration, smooth cinematic viewport panning, and authentic procedural vinyl jazz soundscapes:
 
 <div align="center">
 
-<video src="docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4" controls="controls" width="100%" poster="docs/screenshots/01-homepage-hero.png">
-  Your browser does not support the video tag. <a href="docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4">Click here to play or download the full 1080p MP4 video walkthrough (18 MB)</a>.
-</video>
+### 📺 1080p Broadcast Master Video Walkthrough (2m 26s)
+
+[![Maison Noir Video Walkthrough Player](docs/screenshots/video-player-card.png)](https://github.com/SriniwasAwasthi/maison-noir-luxury-coffee/raw/main/docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4 "Click to Watch Full HD 1080p Master Video Walkthrough")
 
 <p align="center">
-  <a href="docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4">
-    <img src="https://img.shields.io/badge/▶️%20PLAY%20OR%20DOWNLOAD%20VIDEO-Maison_Noir_Walkthrough_1080p.mp4%20(18MB)-gold?style=for-the-badge&logo=quicktime&logoColor=white" alt="Play Video" />
+  <a href="https://github.com/SriniwasAwasthi/maison-noir-luxury-coffee/raw/main/docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4">
+    <img src="https://img.shields.io/badge/▶️%20WATCH%20OR%20DOWNLOAD%20MASTER%20VIDEO-Maison_Noir_Walkthrough_With_VoiceAgent.mp4-gold?style=for-the-badge&logo=quicktime&logoColor=white" alt="Play Video" />
   </a>
 </p>
 
+#### 📽️ Live Viewport Motion Preview
+[![Maison Noir Live Motion Preview](docs/video/walkthrough-preview.gif)](https://github.com/SriniwasAwasthi/maison-noir-luxury-coffee/raw/main/docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4 "Click to Stream Full 1080p Video")
+
 </div>
+
+https://github.com/SriniwasAwasthi/maison-noir-luxury-coffee/raw/main/docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4
 
 ### 📽️ Video Overview & Technical Specifications
 
 | Parameter | Production Value |
 | :--- | :--- |
 | **Title** | *Maison Noir · Haute Specialty Roastery & Digital Sanctuary — Master Overview* |
+| **Primary Video Master** | [`Maison_Noir_Walkthrough_With_VoiceAgent.mp4`](Maison_Noir_Walkthrough_With_VoiceAgent.mp4) (Original 1080p Broadcast Master) |
+| **Web-Streamable Video** | [`docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4`](docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4) (Faststart Web-Optimized MP4) |
+| **Direct Stream URL** | [Direct GitHub Raw Video Link](https://github.com/SriniwasAwasthi/maison-noir-luxury-coffee/raw/main/docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4) |
 | **Duration** | 2 minutes 26 seconds (`146.8s`) |
 | **Resolution & Framerate** | 1080p Full HD (`1920x1080`), 30 FPS, Progressive Scan (`yuv420p`) |
 | **Video Codec & Streaming** | H.264 (`avc1`) with Faststart `moov` atom optimization for immediate web playback |
 | **Audio Pipeline** | Dual-channel: AI Voice Agent (luxury Mayfair cadence) + Web Audio procedural acoustic vinyl jazz |
 | **Visual Architecture** | Dynamic Ken Burns camera panning, obsidian HUD cards (`#0A0806`), and champagne gold accents (`#C9A25E`) |
-| **Repository File** | [`docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4`](docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4) |
 
 ### 🎙️ Video Chapter Guide & Narration Breakdown
 
