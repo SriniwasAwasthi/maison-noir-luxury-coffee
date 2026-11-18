@@ -14,7 +14,7 @@
 [![Supabase Ready](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-gold.svg?style=for-the-badge)](LICENSE)
 
-[Features](#-key-features--technical-novelty) • [Video Walkthrough](#-cinematic-video-walkthrough--ai-voiceover-tour) • [Application Showcase](#️-application-showcase--ui-tour) • [Architecture](#-system-architecture) • [Setup Guide](#-step-by-step-implementation--setup-guide) • [How to Use](#-how-to-use--interactive-workflows) • [Project Structure](#-project-structure) • [Tech Stack](#️-tech-stack) • [Verification](#-verification--testing) • [Contributing](#-contributing) • [License](#-license)
+[Features](#-key-features--technical-novelty) • [Application Showcase](#️-application-showcase--ui-tour) • [Architecture](#-system-architecture) • [Setup Guide](#-step-by-step-implementation--setup-guide) • [How to Use](#-how-to-use--interactive-workflows) • [Project Structure](#-project-structure) • [Tech Stack](#️-tech-stack) • [Verification](#-verification--testing) • [Contributing](#-contributing) • [License](#-license)
 
 </div>
 
@@ -67,73 +67,6 @@ Whether selecting a rare Panama Geisha vacuum siphon brew, calculating customize
 ### 🖼️ 8. Ascending Section Scroll Glow & Interactive Media Gallery
 - **Ascending Scroll Highlighting:** Smooth scroll-spy lighting up nav links (*Story $\rightarrow$ Menu $\rightarrow$ Experience $\rightarrow$ Gallery $\rightarrow$ Reviews $\rightarrow$ Visit*) in gold aura radiance.
 - **Fullscreen Gallery Lightbox:** Filterable by Salon, Barista Art, Slow Bar, and Patisserie with keyboard arrow navigation.
-
----
-
-## 🎬 Cinematic Video Walkthrough & AI Voiceover Tour
-
-Experience the full Maison Noir luxury platform through our broadcast-grade 1080p Full HD master video overview (`Maison_Noir_Walkthrough_With_VoiceAgent.mp4`), featuring synchronized AI voice narration, smooth cinematic viewport panning, and authentic procedural vinyl jazz soundscapes:
-
-<div align="center">
-
-### 📺 1080p Broadcast Master Video Walkthrough (2m 26s)
-
-[![Maison Noir Video Walkthrough Player](docs/screenshots/video-player-card.png)](https://github.com/SriniwasAwasthi/maison-noir-luxury-coffee/raw/main/docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4 "Click to Watch Full HD 1080p Master Video Walkthrough")
-
-<p align="center">
-  <a href="https://github.com/SriniwasAwasthi/maison-noir-luxury-coffee/raw/main/docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4">
-    <img src="https://img.shields.io/badge/▶️%20WATCH%20OR%20DOWNLOAD%20MASTER%20VIDEO-Maison_Noir_Walkthrough_With_VoiceAgent.mp4-gold?style=for-the-badge&logo=quicktime&logoColor=white" alt="Play Video" />
-  </a>
-</p>
-
-#### 📽️ Live Viewport Motion Preview
-[![Maison Noir Live Motion Preview](docs/video/walkthrough-preview.gif)](https://github.com/SriniwasAwasthi/maison-noir-luxury-coffee/raw/main/docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4 "Click to Stream Full 1080p Video")
-
-</div>
-
-https://github.com/SriniwasAwasthi/maison-noir-luxury-coffee/raw/main/docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4
-
-### 📽️ Video Overview & Technical Specifications
-
-| Parameter | Production Value |
-| :--- | :--- |
-| **Title** | *Maison Noir · Haute Specialty Roastery & Digital Sanctuary — Master Overview* |
-| **Primary Video Master** | [`Maison_Noir_Walkthrough_With_VoiceAgent.mp4`](Maison_Noir_Walkthrough_With_VoiceAgent.mp4) (Original 1080p Broadcast Master) |
-| **Web-Streamable Video** | [`docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4`](docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4) (Faststart Web-Optimized MP4) |
-| **Direct Stream URL** | [Direct GitHub Raw Video Link](https://github.com/SriniwasAwasthi/maison-noir-luxury-coffee/raw/main/docs/video/Maison_Noir_Walkthrough_With_VoiceAgent.mp4) |
-| **Duration** | 2 minutes 26 seconds (`146.8s`) |
-| **Resolution & Framerate** | 1080p Full HD (`1920x1080`), 30 FPS, Progressive Scan (`yuv420p`) |
-| **Video Codec & Streaming** | H.264 (`avc1`) with Faststart `moov` atom optimization for immediate web playback |
-| **Audio Pipeline** | Dual-channel: AI Voice Agent (luxury Mayfair cadence) + Web Audio procedural acoustic vinyl jazz |
-| **Visual Architecture** | Dynamic Ken Burns camera panning, obsidian HUD cards (`#0A0806`), and champagne gold accents (`#C9A25E`) |
-
-### 🎙️ Video Chapter Guide & Narration Breakdown
-
-The video features an end-to-end synchronized AI voice tour structured into 6 narrative chapters:
-
-1. **Chapter 1: Brand Genesis & Mayfair Heritage (0:00 – 0:24)**
-   - Welcomes patrons into Maison Noir (founded in 1998 in London’s Old Roastery District, Mayfair).
-   - Explains the founding manifesto: elevating specialty coffee from a quick morning commodity into Michelin-caliber ceremonial fine dining.
-   - Highlights the target audience: high-net-worth individuals, luxury epicures, and discerning single-origin coffee collectors.
-
-2. **Chapter 2: Haute Couture Visual Philosophy & Design System (0:24 – 0:48)**
-   - Explores the digital design system: Obsidian Noir (`#0D0A07`), Champagne Gold (`#C9A25E`), and warm parchment (`#FAF5EA`).
-   - Details the bespoke serif typography, micro-interactions, and gold-leaf hover glows inspired by Parisian luxury ateliers.
-
-3. **Chapter 3: Modern Tech Stack & Pure Web Audio Synthesis (0:48 – 1:12)**
-   - Breaks down the technical engineering: React 19, TypeScript, Vite 7, and Tailwind CSS v4.
-   - Showcases the zero-dependency browser Web Audio API engine: real-time synthesis of 1960s vinyl crackle, warm harmonic jazz chords, and subtle rain with zero audio buffering or latency.
-
-4. **Chapter 4: Live Roaster Telemetry & Culinary Gastronomy (1:12 – 1:36)**
-   - Inspects the live sensor telemetry instrumentation of the 1928 cast-iron Probat drum roaster (drum temperature, air velocity, and dawn freshness clock).
-   - Demonstrates the interactive Rate-of-Rise (RoR) thermal curve and the 22-item menu with quantitative 5-axis cupping radar meters.
-
-5. **Chapter 5: Guest Journey, Cart Engine & VIP Atelier Reservations (1:36 – 2:00)**
-   - Tours the non-intrusive tasting tray cart with real-time 6-currency conversion (including Indian Rupees `₹ INR`).
-   - Demonstrates tableside booking across 4 salon zones and the automated generation of embossed, gold-bordered luxury PDF invitation passes.
-
-6. **Chapter 6: Executive Summary & Concluding Appreciation (2:00 – 2:26)**
-   - Concludes with warm gratitude to evaluators, connoisseurs, and guests, inviting them to step inside the glow of Maison Noir.
 
 ---
 
@@ -301,8 +234,7 @@ flowchart TD
         M4["/api/newsletter"] --> D4["📬 Inner Circle Subscriber Store"]
     end
 
-    subgraph Broadcast_Media ["Broadcast Media & AI Voice Agent Suite"]
-        V1["🎬 Maison_Noir_Walkthrough_With_VoiceAgent.mp4 (Full 1080p Walkthrough)"]
+    subgraph Studio_Audio ["Atmospheric Audio Suite"]
         V2["🎙️ Maison_Noir_Voice_Agent_Narration.mp3 (320 kbps Voiceover)"]
         V3["🎵 Maison_Noir_Vintage_Vinyl_Jazz.mp3 (320 kbps Soundscape)"]
     end
